@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+.a1{color:blue;
+font-size:40px;
+}
+</style>
+</head>
+
+<body>
+<script>
+hindi=Number(prompt("enter hindi marks"));
+english=Number(prompt("enter english marks"));
+c=hindi+english;
+document.write("total is "+c+"<br>");
+per=c*100/100;
+document.write("per is "+per+"<br>");
+if(per>=90)
+{
+	document.write("grade is a");
+}
+else if(per>=80)
+{
+	document.write("grade is b");
+}
+else if(per>=70)
+{
+	document.write("grade is c");
+}
+else if(per>=60)
+{
+	document.write("grade is d");
+}
+else
+{
+	document.write("you are pass");
+}
+
+</script>
+</body>
+</html>
