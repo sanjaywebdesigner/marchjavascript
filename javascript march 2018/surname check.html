@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<input type="text" id="a1"><br>
+
+<p id="a6"></p>
+
+
+<button id="a5" onClick="sanjay()">click</button>
+<script>
+function sanjay()
+{
+a=document.getElementById("a1").value;
+b=a.indexOf(" ");
+if(b==-1)
+{	
+document.getElementById("a6").innerHTML="please enter surname";	
+}
+else
+{
+	document.getElementById("a6").innerHTML="sucessful";
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<input type="text" class="a1"><br>
+
+<button onClick="plus()">plus</button>
+<p></p>
+<script>
+
+function plus()
+{
+	a=document.querySelector(".a1").value;
+	c=a.indexOf(" ");
+	c1=c-1;
+	d=c+1;
+	e=c+2;
+	b=a.charAt(0).toUpperCase()+a.substr(1,c1).toLowerCase()+" "+a.charAt(d).toUpperCase()+a.substr(e).toLowerCase();
+	
+document.querySelector("p").innerHTML=b;
+}
+</script>
+</body>
+</html>

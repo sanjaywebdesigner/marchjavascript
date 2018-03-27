@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<input type="text" class="a1"><br>
+
+<button onClick="plus()">plus</button>
+<p></p>
+<script>
+
+function plus()
+{
+	a=document.querySelector(".a1").value;
+	b=a.charCodeAt(0);
+	c=a.charCodeAt(1);
+	d=a.charCodeAt(2);
+	if(b<48 || b>57)
+	{
+	document.querySelector("p").innerHTML="please enter starting 3 values numerical";	
+	}
+	else if(c<48 || c>57)
+	{
+	document.querySelector("p").innerHTML="please enter starting 3 values numerical";	
+	}
+	else if(d<48 || d>57)
+	{
+	document.querySelector("p").innerHTML="please enter starting 3 values numerical";	
+	}
+	else
+	{
+		document.querySelector("p").innerHTML="correct";	
+	}
+}
+</script>
+</body>
+</html>

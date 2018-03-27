@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<input type="text" id="a1"><br>
+
+<p id="a6"></p>
+<p id="a8"></p>
+<p id="a7"></p>
+<p id="a9"></p>
+<p id="a10"></p>
+<p id="a11"></p>
+
+
+<button id="a5" onClick="workon()">click</button>
+<script>
+function workon()
+{
+a=document.getElementById("a1").value;
+b=a.indexOf("@");
+c=a.lastIndexOf(".");
+d=a.length;
+
+
+
+
+
+ if(d<5)
+{	
+document.getElementById("a6").innerHTML="please enter minimum 5 character";	
+}
+
+else if(b==-1)
+{	
+	document.getElementById("a7").innerHTML="please enter @";
+}
+
+else if(d<9)
+{
+	document.getElementById("a8").innerHTML="please enter minimum 3 character after @";
+	
+}
+
+else if(c==-1)
+{
+	
+	document.getElementById("a9").innerHTML="please enter dot";
+}
+
+
+else if(d<15)
+{
+	
+	document.getElementById("a10").innerHTML="please enter minimum 2 charater after dott";
+}
+
+
+
+
+else
+{
+	document.getElementById("a11").innerHTML="sucessful";
+}
+
+
+
+}
+
+
+
+</script>
+
+</body>
+</html>

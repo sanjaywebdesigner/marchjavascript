@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+.red{
+	color:red;
+	background-color:yellow;
+}
+.green{
+	color:green;
+	background-color:pink;
+}
+</style>
+</head>
+
+<body>
+<input type="text" id="basic" onKeyUp="sanjay()"><br>
+<input type="text" id="ta"><br>
+<input type="text" id="da"><br>
+<input type="text" id="total">
+
+
+<script>
+function sanjay(){
+basic=Number(document.getElementById("basic").value);
+ta=basic*.2;
+da=basic*.1;
+total=basic+ta+da;
+document.getElementById("ta").value=ta;
+document.getElementById("da").value=da;
+document.getElementById("total").value=total;
+if(total<250000)
+{
+
+document.getElementById("total").className="red";
+}
+else
+{
+	
+	document.getElementById("total").className="green";
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<input type="text" id="first"><br>
+<input type="text" id="second"><br>
+<input type="button" onClick="main1()"><br>
+<p></p>
+<script>
+function main1(){
+a=Number(document.querySelector("#first").value);
+b=Number(document.querySelector("#second").value);
+if(a%2!=0)
+{
+	a=a+1;
+}
+for(i=a;i<=b;i=i+2)
+{
+	document.querySelector("p").innerHTML+=i+" ";
+}
+}
+</script>
+</body>
+</html>

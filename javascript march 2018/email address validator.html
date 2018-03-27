@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>email address validator</title>
+	<script>
+	
+	function loginid()
+	{
+		a=document.querySelector("#email").value;
+		b=a.indexOf("@");
+		c=a.indexOf(".");
+		d=a.indexOf(" ");
+		e=c-b;//subtracting index value of @ from .
+		f=e-1;//index value always -1 becoz start from 0 not from 1
+		g=a.lastIndexOf(".");//index of second dot
+		h=g-c;
+		i=h-1;//difference between 1 and second .
+		j=a.length;//indexing last digit
+		k=j-g;
+		l=k-1;// last . only 2 characters
+		m=j-c;
+		n=m-1;//if only one dot last mein 3 digit
+		/*alert(e);*/
+		
+		if(b == -1 )
+			{
+			 if(c == -1)
+				{
+				alert("please enter . and @");
+			}
+				else{
+					alert("please enter @");
+				}
+		
+			}
+			
+		else{
+			if(c == -1)
+				{
+					alert("please enter .");
+				}
+			else{
+				if(d != -1)
+					{
+						alert("please remove spaces");
+					}
+				else{
+					if(f < 3)
+						{
+							alert("difference between @ and . is less than 3");
+						}
+					else{
+						if(b < 5)
+							{
+								alert("before @ there must be 5 digits");
+							}
+						else{
+							if(c != g)
+								{
+									if(i > 2 || i < 2)
+										{ 
+											alert("only 2 letters between 2 dots");
+										}
+									else {
+										if(l>2)
+											{
+												alert("only 2 letters after last dot");
+											}
+									else{
+										alert("success");
+										}
+								}}
+							else{
+								if(n != 3)
+									{
+										alert("write domain right");
+									}
+								
+		
+		else{
+			alert("success");
+		}
+						}
+		}
+		}
+			}
+		}
+	}
+	}
+	</script>
+	</head>
+	<body>
+<label for="email">email address:</label>
+<input type="text" id="email">
+<br>
+<br>
+<input type="button" id="ok" value="login" onClick="loginid()">
+		
+</body>
+</html>
