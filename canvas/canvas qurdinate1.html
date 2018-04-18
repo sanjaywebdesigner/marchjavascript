@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script type="text/javascript">
+function drawShape(){
+  // get the canvas element using the DOM
+  var canvas = document.getElementById('mycanvas');
+
+  // Make sure we don't execute when canvas isn't supported
+  if (canvas.getContext){
+
+    // use getContext to use the canvas for drawing
+    var ctx = canvas.getContext('2d');
+
+   // Draw shapes
+    ctx.beginPath();
+    ctx.moveTo(152,95);
+    ctx.quadraticCurveTo(26,108,62,156);
+    ctx.quadraticCurveTo(135,264,181,235);
+    ctx.quadraticCurveTo(264,135,242,127);
+    ctx.quadraticCurveTo(178,24,152,95);
+   
+    ctx.stroke();
+
+  } else {
+    alert('You need Safari or Firefox 1.5+ to see this demo.');
+  }
+}
+</script>
+</head>
+<body onload="drawShape();">
+   <canvas id="mycanvas" width="400" height="400"></canvas>
+</body>
+</html>

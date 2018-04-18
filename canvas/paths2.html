@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="1000" height="600"></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      context.beginPath();
+      context.moveTo(75,140);
+
+      // quadratic curve
+      context.bezierCurveTo(54, 36, 390, 35, 315, 141);
+context.lineTo(394, 268);
+context.lineTo(24, 268);
+context.lineTo(75, 140);
+    
+context.fillStyle="red";
+  context.fill();   
+
+      context.lineWidth = 5;
+      context.strokeStyle = 'blue';
+      context.stroke();
+context.closePath();
+context.beginPath();
+context.moveTo(125,120);
+context.arc(105,120,20,0,Math.PI*2);
+context.moveTo(305,120);
+context.arc(285,120,20,0,Math.PI*2);
+context.fillStyle="black";
+  context.fill();
+    </script>
+  </body>
+</html>      

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3; background-color:pink;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+
+
+var grd=ctx.createLinearGradient(0,100,200,0);
+grd.addColorStop(0,"red");
+grd.addColorStop(.2,"rgba(0,0,0,0)");
+grd.addColorStop(.3,"rgba(0,0,0,0)");
+grd.addColorStop(.301,"yellow");
+grd.addColorStop(1,"yellow");
+
+// Fill with gradient
+ctx.fillStyle=grd;
+ctx.fillRect(10,10,150,80);
+
+</script>
+
+</body>
+</html>

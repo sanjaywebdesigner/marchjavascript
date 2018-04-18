@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+#menu{
+	height: 71px;
+	width: 1350px;
+	
+	z-index: 3;
+	position: absolute;
+	}
+.menu3 {
+	background-color: #39F;
+	float: left;
+	height: 71px;
+	width: 1px;
+}
+.menu1{
+	
+	height:71px;
+	width:205px;
+	float:left;}
+	.menu2{
+	height: 71px;
+	width: 188px;
+	float: left;
+	text-align: center;
+	line-height: 71px;
+}	
+#myCanvas {
+	position: absolute;
+	z-index: 1;
+}
+</style>
+</head>
+<body>
+
+<canvas id="myCanvas" width="1350" height="71" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createLinearGradient(0, 0, 0, 50);
+    grd.addColorStop(0, 'blue');
+    grd.addColorStop(1, 'rgba(27, 7, 221, 0.5)');
+   
+ctx.fillStyle=grd;
+ctx.fillRect(0,0,1350,71);
+
+</script>
+<div id="menu">
+   <div class="menu1"></div>
+   <div class="menu3"></div>
+  <div class="menu2">HOME</div>
+   <div class="menu3"></div>
+  <div class="menu2">ABOUT</div>
+   <div class="menu3"></div>
+  <div class="menu2">SERVICE</div>
+   <div class="menu3"></div>
+  <div class="menu2">PRODUCT</div>
+   <div class="menu3"></div>
+  <div class="menu2">CONTACT</div>
+  <div class="menu3"></div>
+   
+   
+</div>
+</body>
+</html>

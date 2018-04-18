@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="1000" height="600"></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      context.beginPath();
+      context.moveTo(75,140);
+
+      // quadratic curve
+      context.quadraticCurveTo(390, 35, 315, 141);
+
+    
+
+     
+
+      context.lineWidth = 5;
+      context.strokeStyle = 'blue';
+      context.stroke();
+
+    </script>
+  </body>
+</html>      

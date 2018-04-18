@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      canvas {
+        border:1px solid #2C2C2B; /* 1px border around canvas */
+      }
+    </style>
+  </head>
+<body>
+    <canvas id="Canvas" width="600" height="250"></canvas>
+   <script> 
+ var canvas = document.getElementById('Canvas');
+      var context = canvas.getContext('2d');
+  
+context.fillStyle='#FF3399';
+     
+context.fillRect(200,20,100,100);
+     
+     // co-ordinate axis rotated by an angle of pi/10 radians
+     context.rotate(Math.PI/10)
+     
+     // position of same rectangle after rotation 
+ context.fillRect(200,20,100,100);
+  </script>
+    
+  </body>
+</html>                                                                                                        
+	//http://www.tutorialspark.com/html5/HTML5_Canvas_Save_Restore.php
