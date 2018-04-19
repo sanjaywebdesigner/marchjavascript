@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<input type="text" id="a1"><br>
+<input type="text" id="a2"><br>
+<input type="button" onClick="aa()" value="add"><br>
+<p></p>
+<h1></h1>
+<input type="text" id="a3" placeholder="search a value"><br>
+<input type="button" onClick="aa1()" value="search"><br>
+<script>
+function aa(){
+	a=document.querySelector("#a1").value;
+	b=document.querySelector("#a2").value;
+	document.querySelector("p").innerHTML+="<span>"+a+" "+b+"</span><br>";
+}
+function aa1(){
+	
+	c=document.querySelectorAll("span");
+	d=document.querySelector("#a3").value;
+	e=c[d-1].innerHTML;
+	document.querySelector("h1").innerHTML=e;
+}
+</script>
+</body>
+</html>

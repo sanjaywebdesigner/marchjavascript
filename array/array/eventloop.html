@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<button onClick="a1()">first</button><button onClick="a2()">second</button>
+<p></p>
+<h1></h1>
+<script>
+function a1(){
+b=0;
+for(i=1;i<=10000000000000000;i++)
+{
+b=b+i;	
+}
+document.querySelector("p").innerHTML=b;
+}
+function a2(){
+	document.querySelector("h1").innerHTML="sanjay";
+}
+</script>
+</body>
+</html>
