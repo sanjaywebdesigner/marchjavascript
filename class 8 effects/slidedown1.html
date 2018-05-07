@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.10.2.min.js">
+</script>
+ 
+   <style>
+   .mydiv{ 
+      width:800px;
+      height:auto;
+    }
+	#ss{display:none;
+	background-color:red;
+	
+	}
+  </style>
+</head>
+<body>
+   <div class="mydiv">
+      sanjay jain<br>
+      <input id="show" type="button" value="read more" />
+      <input id="hide" type="button" value="hide" />
+      <input id="toggle" type="button" value="read more toggle" />
+      <div id="ss">content<br>
+      
+      content</div>
+   </div>
+
+   <script >
+   
+   
+
+     $("#show").click(function () {
+        $("#ss").slideDown(1000);
+     });
+$("#hide").click(function () {
+        $("#ss").slideUp(1000);
+     });
+	 $("#toggle").click(function () {
+        $("#ss").slideToggle(1000);
+     });
+     
+
+
+
+   </script>   
+    
+
+</body>
+</html>

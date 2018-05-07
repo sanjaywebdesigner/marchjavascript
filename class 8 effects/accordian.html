@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.10.2.min.js">
+</script>
+ 
+   <style>
+   .mydiv,.mydiv2,.mydiv1{ 
+      width:800px;
+      height:auto;
+    }
+	#ss,#ss1,#ss2{display:none;
+	background-color:red;
+	
+	}
+	input{width:800px;
+	}
+  </style>
+</head>
+<body>
+   <div class="mydiv">
+      
+      <input id="show" type="button" value="read more" />
+      <div id="ss">content<br>
+      
+      content</div>
+   </div>
+   <div class="mydiv1">
+     
+      <input id="show1" type="button" value="read more" />
+      <div id="ss1">content<br>
+      
+      content</div>
+   </div>
+   <div class="mydiv1">
+      
+      <input id="show2" type="button" value="read more" />
+      <div id="ss2">content<br>
+      
+      content</div>
+   </div>
+
+   <script >
+   
+   
+
+     $("#show").click(function () {
+        $("#ss").slideDown(1000);
+		$("#ss1").slideUp(1000);
+		$("#ss2").slideUp(1000);
+     });
+	 $("#show1").click(function () {
+        $("#ss1").slideDown(1000);
+		$("#ss").slideUp(1000);
+		$("#ss2").slideUp(1000);
+     });
+	 $("#show2").click(function () {
+        $("#ss2").slideDown(1000);
+		$("#ss1").slideUp(1000);
+		$("#ss").slideUp(1000);
+     });
+
+     
+
+
+
+   </script>   
+    
+
+</body>
+</html>

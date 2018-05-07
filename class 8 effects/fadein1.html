@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.10.2.min.js">
+</script>
+
+   <style>
+    .target,.log{display: None;
+	width:135px;
+	height:135px;
+	background-color:pink;
+	
+	}
+  </style>
+</head>
+<body>
+
+   
+   <button id="out"> content1 </button>
+   <button id="in"> content2</button> 
+   <div class="target">
+      sanjay jain
+   </div>
+   <div class="log">
+   deepak
+   </div>
+   <script type="text/javascript" language="javascript">
+   
+    
+
+      $("#out").click(function(){
+         $(".target").fadeIn(1000);
+		 $(".log").hide();
+      });
+
+      $("#in").click(function(){
+         $(".log").fadeIn(1000);
+		 $(".target").hide();
+      });
+
+  
+   </script>
+  
+</body>
+</html>

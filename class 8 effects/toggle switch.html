@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.10.2.min.js">
+</script>
+<script type="text/javascript" language="javascript">
+   
+    $(document).ready(function() {
+
+      $("#false").click(function(){
+         $(".target").toggle(false);
+      });
+
+      $("#true").click(function(){
+         $(".target").toggle(true);
+      });
+
+   });
+   </script>
+   <style>
+      p {
+           background-color:#bca;
+           width:250px; 
+           border:1px solid green; 
+        }
+  </style>
+</head>
+<body>
+
+   <p>Click on any of the following buttons:</p>
+   <button id="false"> False Switch </button>
+   <button id="true"> True Switch </button>
+
+   <div class="target">
+      <img src="/images/jquery.jpg" alt="jQuery" />
+   </div>
+  
+</body>
+</html>
